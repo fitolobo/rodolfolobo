@@ -69,6 +69,13 @@ nav{
    height: 1px;
 }
 
+#Sobre-Mi p{
+  font-family: "Open Sans";
+  text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
 #Sobre-Mi h4, #Sobre-Mi div:last-child{
   font-family: "Open Sans";
   line-height: 3;
@@ -135,7 +142,64 @@ nav{
   font-weight: 300;
   /* padding: 0 35% 0 35%; */
 }
-/* Contacto */
+/* Professional Experience */
+#Professional{
+  background-color: #f8f9fa;
+}
+
+#Professional h3{
+  font-family: "Oswald";
+  color: #0c1c36;
+}
+
+#Professional h5{
+  font-family: "Open Sans";
+}
+
+#Professional .text-primary{
+  color: #1c486f !important;
+}
+
+/* Academic Experience */
+#Academic i{
+  color: #ba3c2e;
+}
+
+#Academic div hr{
+  width: 180px;
+  border: 1px solid;
+  background: black;
+}
+
+#Academic h4{
+  font-family: "Oswald";
+}
+
+#Academic h5{
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+#Academic p{
+  font-family: "Open Sans";
+}
+
+/* Videos */
+#Videos div hr{
+  width: 150px;
+  border: 1px solid;
+  background: black;
+}
+
+#Videos h4{
+  font-family: "Oswald";
+}
+
+#Videos video{
+  border: 2px solid #0c1c36;
+}
+
+/* Education */
 
 #Education div hr{
   width: 150px;
@@ -144,6 +208,11 @@ nav{
 
 #Education i, h5{
   display: inline-block;
+}
+
+#Education .text-muted{
+  font-size: 0.9em;
+  margin-top: 0.5em;
 }
 
 /* Footer */
