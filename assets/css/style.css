@@ -13,17 +13,30 @@ nav{
 /* Hero Section*/
 
 #Hero-Section{
-  height: 100vh;
+  /* Fallback for older browsers */
+  min-height: 60vh;
+  /* Dynamic viewport height for modern mobile browsers */
+  min-height: 60dvh;
+  
   background-image: linear-gradient(#0c1c36, #1c486f);
   background-size: cover;
   background-position: center;
-  position: relative;
+  
+  /* Flexbox replaces absolute positioning */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  padding: 24px 16px;
 }
 
+/* Remove absolute positioning */
 #Hero-Section div{
- position: absolute;
- bottom: 30px;
- width: 100%;
+  position: static;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
 }
 
 #Hero-Section hr{
@@ -31,9 +44,11 @@ nav{
    height: 1px;
 }
 
+/* Responsive typography with clamp */
 #Hero-Section h1{
-  font-size: 72px;
   font-family: "Oswald";
+  font-size: clamp(32px, 7vw, 72px);
+  margin: 0;
 }
 
 #Hero-Section h1:first-child{
@@ -44,31 +59,20 @@ nav{
   font-weight: normal;
 }
 
+/* Better responsive photo sizing */
 .fotoprincipal{
-  width: 28%;
+  width: min(180px, 45vw);
   border-radius: 50%;
 }
 
 @media (max-width: 576px){
   #Hero-Section{
-    height: 30vh;
-    min-height: 300px;
-  }
-  
-  #Hero-Section h1{
-    font-size: 40px;
+    min-height: 45dvh;
+    padding: 16px 12px;
   }
   
   #Hero-Section hr{
      width: 200px;
-  }
-  
-  .fotoprincipal{
-    width: 45%;
-  }
-  
-  #Hero-Section div{
-    bottom: 20px;
   }
 }
 
