@@ -51,8 +51,8 @@ nav{
 
 @media (max-width: 576px){
   #Hero-Section{
-    height: 65vh;
-    min-height: 500px;
+    height: 30vh;
+    min-height: 300px;
   }
   
   #Hero-Section h1{
