@@ -50,11 +50,25 @@ nav{
 }
 
 @media (max-width: 576px){
+  #Hero-Section{
+    height: 65vh;
+    min-height: 500px;
+  }
+  
   #Hero-Section h1{
     font-size: 40px;
   }
+  
   #Hero-Section hr{
      width: 200px;
+  }
+  
+  .fotoprincipal{
+    width: 45%;
+  }
+  
+  #Hero-Section div{
+    bottom: 20px;
   }
 }
 
